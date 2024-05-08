@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Completed</title>
+    <style>
+/* CSS styles for success page */
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            width: 380px;
+            padding: 40px 30px 50px 30px;
+            background: #aeabab;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            color: #14aa19;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        #exitBtn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #exitBtn:hover {
+            background-color: #ff3333;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Congratulations!</h1>
+        <p>You have successfully completed the quiz.</p>
+        <button id="exitBtn">Exit</button>
+    </div>
+
+    <script>
+        document.getElementById('exitBtn').addEventListener('click', function() {
+        window.location.href = 'index.html'; // Replace 'exit_page.html' with the desired destination
+    });
+    </script>
+</body>
+
+</html>
